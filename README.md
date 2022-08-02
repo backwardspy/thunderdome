@@ -8,7 +8,7 @@ docker (recent enough for compose support), and python.
 ## usage
 
 ```bash
-git submodule init --recursive --init --remote
+git submodule update --recursive --init --remote
 docker compose build
 docker compose up -d
 python runner.py
