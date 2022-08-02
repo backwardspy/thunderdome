@@ -1,0 +1,27 @@
+[submodule "serpentipity"]
+	path = serpentipity
+	url = git@github.com:carlagouws/serpentipity.git
+[submodule "Battlesnake-Galactica2"]
+	path = Battlesnake-Galactica2
+	url = git@github.com:Mylus1/Battlesnake-Galactica2.git
+[submodule "marty_the_battlesnake"]
+	path = marty_the_battlesnake
+	url = git@github.com:martinmarsh/marty_the_battlesnake.git
+[submodule "johnny-slitherhand"]
+	path = johnny-slitherhand
+	url = git@github.com:cpressland/johnny-slitherhand.git
+[submodule "taipan-no-prisoners"]
+	path = taipan-no-prisoners
+	url = git@github.com:lewejuice/taipan-no-prisoners.git
+[submodule "david_hisselhoff"]
+	path = david_hisselhoff
+	url = git@github.com:simt33/david_hisselhoff.git
+[submodule "king-kobra"]
+	path = king-kobra
+	url = git@github.com:k-aziz/king-kobra.git
+[submodule "calm_snek"]
+	path = calm_snek
+	url = git@github.com:Mick-Cadac/calm_snek.git
+[submodule "battlesnake-doctor-strangle"]
+	path = battlesnake-doctor-strangle
+	url = git@github.com:backwardspy/battlesnake-doctor-strangle.git

@@ -1,0 +1,55 @@
+services:
+  doctor-strangle:
+    build: ./battlesnake-doctor-strangle
+    ports:
+      - "2000:6502"
+  david-hisselhoff:
+    build: ./david_hisselhoff
+    environment:
+      PORT: "6502"
+    ports:
+      - "2001:6502"
+  marty-the-battlesnake:
+    build: ./marty_the_battlesnake
+    environment:
+      PORT: "6502"
+    ports:
+      - "2002:6502"
+  battlesnake-galactica:
+    build: ./Battlesnake-Galactica2
+    environment:
+      PORT: "6502"
+    ports:
+      - "2003:6502"
+  johnny-slitherhand:
+    build: ./johnny-slitherhand
+    ports:
+      - "2004:6502"
+  taipan-no-prisoners:
+    build: ./taipan-no-prisoners
+    environment:
+      PORT: "6502"
+    ports:
+      - "2005:6502"
+  calm-snek:
+    build: ./calm_snek
+    environment:
+      PORT: "6502"
+    ports:
+      - "2006:6502"
+  king-kobra:
+    build:
+      context: ./king-kobra
+      dockerfile: ../king-kobra.Dockerfile
+    environment:
+      PORT: "6502"
+    ports:
+      - "2007:6502"
+  serpentipity:
+    build:
+      context: ./serpentipity
+      dockerfile: ../serpentipity.Dockerfile
+    environment:
+      PORT: "6502"
+    ports:
+      - "2008:6502"
