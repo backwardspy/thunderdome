@@ -15,15 +15,16 @@ snakes = [
     ("hangry", 2008),
 ]
 
-RUNS = 1000
 OUTPUT_PATH = Path("games/")
 
 OUTPUT_PATH.mkdir(parents=True, exist_ok=True)
-for i in range(RUNS):
+i = 0
+while True:
+    i += 1
     game_id = uuid4()
     combatants = random.sample(snakes, 2)
     print(
-        f"running game #{i} of {RUNS} - {combatants[0][0]} vs {combatants[1][0]} ({game_id})"
+        f"running game #{i} - {combatants[0][0]} vs {combatants[1][0]} ({game_id})"
     )
     cmd = [
         "battlesnake",
