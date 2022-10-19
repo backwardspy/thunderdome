@@ -25,3 +25,6 @@
 [submodule "battlesnake-doctor-strangle"]
 	path = battlesnake-doctor-strangle
 	url = git@github.com:backwardspy/battlesnake-doctor-strangle.git
+[submodule "Battle-Boogie"]
+	path = Battle-Boogie
+	url = git@github.com:NickSquiggles/Battle-Boogie.git

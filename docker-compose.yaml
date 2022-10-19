@@ -53,3 +53,9 @@ services:
       PORT: "6502"
     ports:
       - "2008:6502"
+  battle-boogie:
+    build: ./Battle-Boogie
+    environment:
+      PORT: "6502"
+    ports:
+      - "2009:6502"

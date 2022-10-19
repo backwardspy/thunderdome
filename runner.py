@@ -1,7 +1,7 @@
-from uuid import uuid4
-from pathlib import Path
 import random
 import subprocess
+from pathlib import Path
+from uuid import uuid4
 
 snakes = [
     ("doctor strangle", 2000),
@@ -12,7 +12,8 @@ snakes = [
     ("taipan no prisoners", 2005),
     ("calm snek", 2006),
     ("king kobra", 2007),
-    ("hangry", 2008),
+    ("serpentipity", 2008),
+    ("battle boogie", 2009),
 ]
 
 OUTPUT_PATH = Path("games/")
@@ -34,9 +35,6 @@ while True:
     ]
 
     for name, port in combatants:
-        cmd.append("--name")
-        cmd.append(name)
-        cmd.append("--url")
-        cmd.append(f"http://localhost:{port}")
+        cmd.extend(("--name", name, "--url", f"http://localhost:{port}"))
 
     subprocess.run(cmd, stderr=subprocess.PIPE)
